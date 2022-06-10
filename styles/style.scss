@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Josefin+Sans:wght@300;400;600&family=League+Spartan:wght@700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Outfit:wght@300;400;600&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+//variables
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+$Blue: hsl(248, 32%, 49%);
+$Dark-Blue: hsl(249, 10%, 26%);
+$Grayish-Blue: hsl(246, 25%, 77%);
+$Light-green: hsl(154, 78%, 68%);
+$Light-blue: hsl(248, 49%, 61%);
+
+//utility class
+.visib-hidden {
+  visibility: hidden;
+}
+
+//whenever error occurs this class will be added to p tag
+//which is bellow input tag
+.error-txt {
+  font-size: 12px;
+  text-align: end;
+  color: red;
+}
+
+.input-style {
+  padding: 1rem 0.5rem;
+  font-size: 16;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid $Grayish-Blue;
+  border-radius: 0.3rem;
+  font-family: "Poppins";
+  color: $Dark-Blue;
+}
+
+//whenever error occurs this class will be added to input tag
+.input-style-error {
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: left 98% bottom 50%;
+  color: $Red;
+  border: 3px solid $Red;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+::placeholder {
+  font-family: "Poppins";
+  color: $Grayish-Blue;
+}
+
+.footer-txt {
+  text-align: center;
+  font-size: 13px;
+  color: $Grayish-Blue;
+}
+//utility class
+
+//main design
+body {
+  background-color: $Red;
+  background-image: url(../images/bg-intro-desktop.png);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  main {
+    width: 80%;
+    min-height: 80vh;
+    margin-inline: auto;
+    .container {
+      display: flex;
+      .left-cont {
+        width: 50%;
+        .l-wrapper {
+          width: 80%;
+          margin-inline: auto;
+          padding-top: 12rem;
+          h1 {
+            color: white;
+            font-size: 2.5rem;
+          }
+          p {
+            font-weight: 500;
+            color: white;
+            letter-spacing: 1px;
+          }
+        }
+      }
+      .right-cont {
+        width: 50%;
+        .try-it-button {
+          background-color: $Blue;
+          text-align: center;
+          padding: 1.2rem;
+          box-shadow: 7px 7px gray;
+          border-radius: 0.3rem;
+          transition: background-color 0.4s ease-in-out;
+          color: white;
+        }
+        .try-it-button:hover {
+          cursor: pointer;
+          background-color: $Light-blue;
+        }
+        .r-wrapper {
+          margin-top: 1.5rem;
+          background-color: white;
+          padding: 3rem;
+          border-radius: 0.5rem;
+        }
+        .trial-button {
+          text-align: center;
+          background-color: $Green;
+          padding: 1rem;
+          border-radius: 0.3rem;
+          color: white;
+          margin-bottom: 0.7rem;
+          transition: background-color 0.4s ease-in-out;
+        }
+        .trial-button:hover {
+          cursor: pointer;
+          background-color: $Light-green;
+        }
+        span {
+          color: $Red;
+        }
+      }
+    }
+  }
+}
+
+//mobile view
+@media screen and (max-width: 425px) {
+  .error-txt {
+    font-size: 8px;
+    text-align: end;
+    color: red;
+  }
+  .input-style {
+    padding: 1rem 0.5rem;
+    font-size: 16;
+    font-size: 12px;
+    outline: none;
+    border: 2px solid $Grayish-Blue;
+    border-radius: 0.3rem;
+    font-family: "Poppins";
+    color: $Dark-Blue;
+  }
+  ::placeholder {
+    font-size: 12px;
+    font-family: "Poppins";
+    color: $Grayish-Blue;
+  }
+
+  .footer-txt {
+    text-align: center;
+    font-size: 10px;
+    color: $Grayish-Blue;
+  }
+  body {
+    height: 100%;
+
+    main {
+      width: 86%;
+      min-height: 100vh;
+      margin-inline: auto;
+      .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        .left-cont {
+          width: 100%;
+          .l-wrapper {
+            width: 100%;
+            margin-inline: auto;
+            padding-top: 1rem;
+            h1 {
+              font-size: 1.5rem;
+            }
+            p {
+              font-weight: 500;
+              color: white;
+              font-size: 12px;
+              letter-spacing: 1px;
+            }
+          }
+        }
+        .right-cont {
+          width: 100%;
+          .try-it-button {
+            background-color: hsl(248deg, 32%, 49%);
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 2px 2px grey;
+            border-radius: 0.3rem;
+            transition: background-color 0.4s ease-in-out;
+            color: white;
+            font-size: 12px;
+            margin: 2rem 0;
+          }
+          .r-wrapper {
+            margin-top: 1.5rem;
+            background-color: white;
+            padding: 1.3rem;
+            border-radius: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

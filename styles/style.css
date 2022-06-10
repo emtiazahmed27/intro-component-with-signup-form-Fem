@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Josefin+Sans:wght@300;400;600&family=League+Spartan:wght@700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Outfit:wght@300;400;600&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.visib-hidden {
+  visibility: hidden;
+}
+
+.error-txt {
+  font-size: 12px;
+  text-align: end;
+  color: red;
+}
+
+.input-style {
+  padding: 1rem 0.5rem;
+  font-size: 16;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid hsl(246deg, 25%, 77%);
+  border-radius: 0.3rem;
+  font-family: "Poppins";
+  color: hsl(249deg, 10%, 26%);
+}
+
+.input-style-error {
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: left 98% bottom 50%;
+  color: hsl(0deg, 100%, 74%);
+  border: 3px solid hsl(0deg, 100%, 74%);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+::-moz-placeholder {
+  font-family: "Poppins";
+  color: hsl(246deg, 25%, 77%);
+}
+
+:-ms-input-placeholder {
+  font-family: "Poppins";
+  color: hsl(246deg, 25%, 77%);
+}
+
+::placeholder {
+  font-family: "Poppins";
+  color: hsl(246deg, 25%, 77%);
+}
+
+.footer-txt {
+  text-align: center;
+  font-size: 13px;
+  color: hsl(246deg, 25%, 77%);
+}
+
+body {
+  background-color: hsl(0deg, 100%, 74%);
+  background-image: url(../images/bg-intro-desktop.png);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+body main {
+  width: 80%;
+  min-height: 80vh;
+  margin-inline: auto;
+}
+body main .container {
+  display: flex;
+}
+body main .container .left-cont {
+  width: 50%;
+}
+body main .container .left-cont .l-wrapper {
+  width: 80%;
+  margin-inline: auto;
+  padding-top: 12rem;
+}
+body main .container .left-cont .l-wrapper h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+body main .container .left-cont .l-wrapper p {
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
+}
+body main .container .right-cont {
+  width: 50%;
+}
+body main .container .right-cont .try-it-button {
+  background-color: hsl(248deg, 32%, 49%);
+  text-align: center;
+  padding: 1.2rem;
+  box-shadow: 7px 7px gray;
+  border-radius: 0.3rem;
+  transition: background-color 0.4s ease-in-out;
+  color: white;
+}
+body main .container .right-cont .try-it-button:hover {
+  cursor: pointer;
+  background-color: hsl(248deg, 49%, 61%);
+}
+body main .container .right-cont .r-wrapper {
+  margin-top: 1.5rem;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+body main .container .right-cont .trial-button {
+  text-align: center;
+  background-color: hsl(154deg, 59%, 51%);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  color: white;
+  margin-bottom: 0.7rem;
+  transition: background-color 0.4s ease-in-out;
+}
+body main .container .right-cont .trial-button:hover {
+  cursor: pointer;
+  background-color: hsl(154deg, 78%, 68%);
+}
+body main .container .right-cont span {
+  color: hsl(0deg, 100%, 74%);
+}
+
+@media screen and (max-width: 425px) {
+  .error-txt {
+    font-size: 8px;
+    text-align: end;
+    color: red;
+  }
+
+  .input-style {
+    padding: 1rem 0.5rem;
+    font-size: 16;
+    font-size: 12px;
+    outline: none;
+    border: 2px solid hsl(246deg, 25%, 77%);
+    border-radius: 0.3rem;
+    font-family: "Poppins";
+    color: hsl(249deg, 10%, 26%);
+  }
+
+  ::-moz-placeholder {
+    font-size: 12px;
+    font-family: "Poppins";
+    color: hsl(246deg, 25%, 77%);
+  }
+
+  :-ms-input-placeholder {
+    font-size: 12px;
+    font-family: "Poppins";
+    color: hsl(246deg, 25%, 77%);
+  }
+
+  ::placeholder {
+    font-size: 12px;
+    font-family: "Poppins";
+    color: hsl(246deg, 25%, 77%);
+  }
+
+  .footer-txt {
+    text-align: center;
+    font-size: 10px;
+    color: hsl(246deg, 25%, 77%);
+  }
+
+  body {
+    height: 100%;
+  }
+  body main {
+    width: 86%;
+    min-height: 100vh;
+    margin-inline: auto;
+  }
+  body main .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  body main .container .left-cont {
+    width: 100%;
+  }
+  body main .container .left-cont .l-wrapper {
+    width: 100%;
+    margin-inline: auto;
+    padding-top: 1rem;
+  }
+  body main .container .left-cont .l-wrapper h1 {
+    font-size: 1.5rem;
+  }
+  body main .container .left-cont .l-wrapper p {
+    font-weight: 500;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  body main .container .right-cont {
+    width: 100%;
+  }
+  body main .container .right-cont .try-it-button {
+    background-color: hsl(248deg, 32%, 49%);
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 2px 2px grey;
+    border-radius: 0.3rem;
+    transition: background-color 0.4s ease-in-out;
+    color: white;
+    font-size: 12px;
+    margin: 2rem 0;
+  }
+  body main .container .right-cont .r-wrapper {
+    margin-top: 1.5rem;
+    background-color: white;
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
